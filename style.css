@@ -457,7 +457,7 @@ button.btn-dourado {
 }
 
 /* CARD */
-.oferta-card {
+.servico-card {
   position: relative;
   min-height: 320px;
   border-radius: 18px;
@@ -467,7 +467,7 @@ button.btn-dourado {
   border: 1px solid rgba(242, 201, 76, 0.35);
 }
 
-.oferta-overlay {
+.servico-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
@@ -479,20 +479,20 @@ button.btn-dourado {
   z-index: 1;
 }
 
-.oferta-content {
+.servico-content {
   position: absolute;
   bottom: 0;
   z-index: 2;
   padding: 25px;
 }
 
-.oferta-content h3 {
+.servico-content h3 {
   color: var(--amarelo-principal);
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.oferta-content p {
+.servico-content p {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #eee;
