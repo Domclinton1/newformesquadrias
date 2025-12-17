@@ -459,7 +459,7 @@ button.btn-dourado {
 
 .galeria {
   padding: 100px 0;
-  background: radial-gradient(circle at top, #111 0%, #000 70%);
+  
 }
 .galeria .container {
   display: flex;
@@ -467,15 +467,27 @@ button.btn-dourado {
 }
 
 .galeria h2 {
+  font-size: 2.3rem;
   text-align: center;
   margin-bottom: 15px;
+  text-transform: uppercase;
+   background: linear-gradient(
+    135deg,
+    var(--amarelo-claro),
+    var(--amarelo-principal),
+    var(--amarelo-escuro)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
 }
 
 .galeria-sub {
   text-align: center;
   max-width: 700px;
   margin: 0 auto 50px;
-  color: #ccc;
+  color: var(--cinza-claro);
 }
 
 .galeria-carousel {
