@@ -26,6 +26,16 @@ body {
   font-family: "Poppins", sans-serif;
   color: var(--branco);
 }
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h2 {
   font-size: 2.3rem;
 
@@ -50,7 +60,10 @@ h2 {
   padding: 15px 50px;
   border-bottom: 1px solid rgba(242, 201, 76, 0.25);
 }
-
+header nav {
+  display: flex;
+  align-items: center;
+}
 .logo img {
   max-width: 120px;
 }
@@ -87,6 +100,98 @@ h2 {
 
 .link-dourado.destaque {
   font-weight: 700;
+}
+/* ================= HEADER BASE ================= */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px 50px;
+  background: #0d0d0d;
+  border-bottom: 1px solid rgba(242, 201, 76, 0.25);
+}
+
+.logo img {
+  max-width: 120px;
+}
+
+/* ================= MENU DESKTOP ================= */
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+/* ================= BOTÃO HAMBURGUER ================= */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background: var(--amarelo-principal);
+  transition: 0.3s;
+}
+
+/* ================= OVERLAY ================= */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 900;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+
+    background: #0d0d0d;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 100px 30px;
+    gap: 30px;
+
+    transition: right 0.4s ease;
+    z-index: 1000;
+  }
+
+  .menu a {
+    font-size: 1rem;
+  }
+
+  /* MENU ABERTO */
+  .menu.active {
+    right: 0;
+  }
+
+  .menu-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }
 
 /* ================= HERO ================= */
@@ -964,6 +1069,7 @@ button.btn-dourado {
   transform: translateX(-10px);
   pointer-events: none;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 .rede:hover {
@@ -1144,4 +1250,90 @@ button.btn-dourado {
 
 .footer-politicas a:hover {
   color: var(--amarelo-principal);
+}
+@media screen and (max-width: 1020px) {
+  .logo img {
+    max-width: 68px;
+  }
+  .header nav .btn-dourado {
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .hero {
+    padding: 15px;
+  }
+  h1,
+  h2,
+  h3 {
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  .hero .container {
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 120px;
+  }
+  .hero .container h1 {
+    font-size: 2.4rem;
+  }
+  .servicos {
+    padding: 15px;
+  }
+  .servicos .container-servicos {
+    padding: 0;
+  }
+  .servicos-ofertados {
+    padding: 15px;
+  }
+  .servicos-ofertados .container {
+    padding: 0;
+  }
+  .galeria {
+    padding: 15px;
+  }
+  .galeria .container {
+    padding: 0;
+  }
+  .oferta {
+    padding: 15px;
+  }
+  .oferta-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .avaliacoes {
+    padding: 15px;
+  }
+  .avaliacoes-container {
+    padding: 0;
+    flex-direction: column;
+    gap: 1.3rem;
+    display: flex;
+  }
+  .diferenciais {
+    padding: 15px;
+  }
+  .diferenciais .container {
+    padding: 0;
+  }
+  .contato-final {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contato-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+  .redes-sociais {
+  }
+  .footer {
+    padding: 15px;
+  }
+  .footer-container {
+    padding: 0;
+  }
 }

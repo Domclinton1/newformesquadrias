@@ -1,3 +1,19 @@
+// Menu responsivo
+const menuToggle = document.getElementById("menuToggle");
+const menu = document.getElementById("menu");
+const overlay = document.getElementById("menuOverlay");
+
+menuToggle.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  overlay.classList.toggle("active");
+});
+
+overlay.addEventListener("click", () => {
+  menu.classList.remove("active");
+  overlay.classList.remove("active");
+});
+
+// formulario do whatsapp
 document
   .getElementById("form-whatsapp")
   .addEventListener("submit", function (e) {

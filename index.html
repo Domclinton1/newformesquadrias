@@ -41,23 +41,36 @@
         <img src="./assets/icons/logo.png" alt="NewForm Esquadrias" />
       </a>
 
-      <nav class="menu">
+      <!-- BOTÃO MENU MOBILE -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- MENU -->
+      <nav class="menu" id="menu">
+        <a href="#sobre-nos" class="link-dourado">Sobre nós</a>
         <a href="#servicos" class="link-dourado">Serviços</a>
+        <a href="#galeria-de-fotos" class="link-dourado">Galeria de Obras</a>
         <a href="./pages/linha-gold.html" class="link-dourado">Linha Gold</a>
         <a href="./pages/linha-suprema.html" class="link-dourado"
           >Linha Suprema</a
         >
         <a href="./pages/vidracaria.html" class="link-dourado">Vidraçaria</a>
-        <a href="#contato" class="link-dourado">Contato</a>
-        <a href="#oferta-limitada" class="link-dourado destaque">Oferta</a>
+        <a href="#contato-final" class="link-dourado">Contato</a>
+        <a href="#oferta-limitada" class="btn-dourado">Oferta Limitada</a>
       </nav>
+
+      <!-- OVERLAY -->
+      <div class="menu-overlay" id="menuOverlay"></div>
     </header>
 
     <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="itulo-dourado-animado">Esquadrias de Alumínio</h1>
+          <h1 class="titulo-dourado-animado">Esquadrias de Alumínio</h1>
 
           <p class="hero-subtitle">
             Fabricação, instalação e manutenção de esquadrias de alumínio,
@@ -65,9 +78,13 @@
           </p>
 
           <div class="hero-buttons">
-            <a href="#contato" class="btn-dourado"> Solicitar Orçamento </a>
+            <a href="#contato" class="btn-dourado">
+              Solicitar Orçamento <i class="fab fa-whatsapp"></i
+            ></a>
 
-            <a href="#linha-gold" class="btn-outline"> Conhecer Linha Gold </a>
+            <a href="#linha-gold" class="btn-outline">
+              Seguir no Instagram <i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
 
@@ -106,7 +123,7 @@
             </div>
 
             <button type="submit" class="btn-dourado">
-              Enviar pelo WhatsApp
+              Enviar pelo WhatsApp <i class="fab fa-whatsapp"></i>
             </button>
 
             <span class="feedback" id="feedback"></span>
@@ -114,7 +131,8 @@
         </div>
       </div>
     </section>
-    <section class="servicos" id="servicos">
+
+    <section class="servicos" id="sobre-nos">
       <div class="container-servicos">
         <div class="servicos-header">
           <h2 class="titulo-dourado-premium titulo-dourado-animado">
@@ -165,7 +183,9 @@
                 <li>✔ Guarda-corpo</li>
                 <li>✔ Fechamento de áreas</li>
               </ul>
-              <a href="#contato" class="btn-servico"> Solicitar Orçamento </a>
+              <a href="./pages/vidracaria.html" class="btn-servico">
+                Saiba Mais
+              </a>
             </div>
           </div>
         </div>
@@ -185,7 +205,7 @@
       </div>
     </section>
 
-    <section class="servicos-ofertados">
+    <section class="servicos-ofertados" id="servicos">
       <div class="container">
         <h2 class="titulo-dourado-animado">
           Serviços de Esquadrias de Alumínio e Vidraçaria em Belo Horizonte
@@ -603,6 +623,7 @@
         </a>
       </div>
     </section>
+
     <section class="diferenciais">
       <div class="container">
         <h2 class="titulo-dourado-animado">
@@ -647,6 +668,7 @@
         </div>
       </div>
     </section>
+
     <section id="contato-final" class="contato-final">
       <h2 class="titulo-dourado-animado centro">
         Esquadrias de Alumínio e Vidraçaria em Belo Horizonte
@@ -661,11 +683,14 @@
         <!-- MAPA -->
         <div class="contato-mapa">
           <iframe
-            src="https://www.google.com/maps?q=Belo%20Horizonte%20MG&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.323714278377!2d-43.938494923642!3d-19.868548281506207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69a88a9239c47%3A0x5f4e714e2f8e2983!2sNew%20Form%20Esquadrias%20de%20Alum%C3%ADnio!5e0!3m2!1spt-BR!2sbr!4v1766237776739!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          >
-          </iframe>
+          ></iframe>
         </div>
 
         <!-- FORMULÁRIO -->
@@ -703,7 +728,7 @@
             </div>
 
             <button type="submit" class="btn-dourado">
-              Enviar pelo WhatsApp
+              Enviar pelo WhatsApp <i class="fab fa-whatsapp"></i>
             </button>
 
             <span class="feedback" id="feedback"></span>
@@ -738,6 +763,7 @@
         </a>
       </div>
     </section>
+
     <footer class="footer">
       <div class="footer-container">
         <!-- COLUNA 1 -->
@@ -810,5 +836,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
