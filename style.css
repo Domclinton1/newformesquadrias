@@ -47,8 +47,8 @@ h2 {
     var(--amarelo-principal),
     var(--amarelo-escuro)
   );
-
-  -webkit-background-clip: text;
+  background-clip: text; /* padrão */
+  -webkit-background-clip: text; /* Chrome / Safari */
   -webkit-text-fill-color: transparent;
 }
 /* ================= NOTIFICAÇÃO SOCIAL ================= */
@@ -277,7 +277,7 @@ header nav {
     var(--amarelo-principal),
     var(--amarelo-escuro)
   );
-
+  background-clip: text; /* padrão */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
@@ -405,7 +405,7 @@ header nav {
     var(--amarelo-principal),
     var(--amarelo-escuro)
   );
-
+  background-clip: text; /* padrão */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -504,6 +504,7 @@ button.btn-dourado {
   background: linear-gradient(135deg, #ffe27a, #f2c94c, #d4a017);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* padrão */
 }
 .servicos-header p {
   color: var(--cinza-medio);
@@ -601,6 +602,7 @@ button.btn-dourado {
   background: linear-gradient(135deg, #ffe27a, #f2c94c, #d4a017);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* padrão */
 }
 
 .servico-card p {
@@ -732,7 +734,7 @@ button.btn-dourado {
     var(--amarelo-principal),
     var(--amarelo-escuro)
   );
-
+  background-clip: text; /* padrão */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -832,6 +834,7 @@ button.btn-dourado {
   background: linear-gradient(135deg, #fff1a8, #f2c94c, #d4a017);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* padrão */
 }
 
 .oferta-descricao {
@@ -864,6 +867,7 @@ button.btn-dourado {
   background: linear-gradient(135deg, #fff1a8, #f2c94c, #d4a017);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text; /* padrão */
 }
 
 .oferta-destaque small {
@@ -1234,6 +1238,7 @@ button.btn-dourado {
     var(--amarelo-principal),
     var(--amarelo-escuro)
   );
+  background-clip: text; /* padrão */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
