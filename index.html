@@ -35,8 +35,6 @@
     ></script>
   </head>
   <body>
-    <div id="notificacao-orcamento" class="notificacao-orcamento"></div>
-
     <!-- HEADER -->
     <header class="header">
       <a href="#" class="logo">
@@ -72,7 +70,9 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="titulo-dourado-animado">Esquadrias de Alumínio</h1>
+          <h1 class="titulo-dourado-animado">
+            Serralheria de Esquadrias de Alumínio em BH
+          </h1>
 
           <p class="hero-subtitle">
             Fabricação, instalação e manutenção de esquadrias de alumínio,
@@ -81,7 +81,8 @@
 
           <div class="hero-buttons">
             <a
-              href="https://wa.me/553196733778?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20esquadrias..."
+              href="#"
+              onclick="enviarWhatsApp(event, 'esquadria')"
               class="btn-dourado"
             >
               Fale no WhatsApp <i class="fab fa-whatsapp"></i
@@ -95,8 +96,8 @@
               Seguir no Instagram <i class="fab fa-instagram"></i
             ></a>
           </div>
-          <div id="area-atendimento" class="area-atendimento">
-            Atendemos sua região
+          <div id="localizacao-atendimento" class="atendimento-local">
+            Atendemos Belo Horizonte e região
           </div>
         </div>
 
@@ -174,7 +175,13 @@
                 <li>✔ Linha Suprema</li>
                 <li>✔ Projetos personalizados</li>
               </ul>
-              <a href="#contato" class="btn-servico"> Solicitar Orçamento </a>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'esquadria')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
             </div>
           </div>
 
@@ -214,10 +221,11 @@
           custo-benefício.
         </p>
         <a
-          href="https://wa.me/553196733778?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20esquadrias..."
+          href="#"
+          onclick="enviarWhatsApp(event, 'esquadria')"
           class="btn-dourado"
         >
-          Solicitar Orçamento
+          Solicitar Orçamento <i class="fab fa-whatsapp"></i>
         </a>
       </div>
     </section>
@@ -927,7 +935,27 @@
         </div>
       </div>
     </footer>
+    <div id="social-proof"></div>
 
     <script src="script.js"></script>
+    <script>
+      (async function detectarCidade() {
+        try {
+          const response = await fetch("https://ipapi.co/json/");
+          const data = await response.json();
+
+          const cidade = data.city;
+          const estado = data.region_code || "MG";
+
+          if (cidade) {
+            document.getElementById(
+              "localizacao-atendimento"
+            ).innerHTML = `📍 Empresa em <strong>Belo Horizonte – MG</strong>, atendemos <strong>${cidade} – ${estado}</strong> e região.`;
+          }
+        } catch (error) {
+          console.warn("Não foi possível detectar a localização");
+        }
+      })();
+    </script>
   </body>
 </html>

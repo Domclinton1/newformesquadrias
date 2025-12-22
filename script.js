@@ -88,36 +88,86 @@ fetch("https://ipapi.co/json/")
       "Atendemos Belo Horizonte e toda Minas Gerais";
   });
 
-//notificações provas sociais
-const notificacao = document.getElementById("notificacaoOrcamento");
-const textoNotificacao = document.getElementById("textoNotificacao");
+function enviarWhatsApp(event, tipo) {
+  event.preventDefault();
 
-const nomes = ["Carlos", "João", "Ana", "Marcos", "Fernanda", "Paulo", "Lucas"];
+  let mensagem = "";
 
-function gerarMensagem(local) {
-  const nome = nomes[Math.floor(Math.random() * nomes.length)];
-
-  if (!local) {
-    return `${nome} acabou de solicitar um orçamento`;
+  if (tipo === "esquadria") {
+    mensagem = "Olá, gostaria de um orçamento de esquadrias de alumínio";
   }
 
-  if (local.region_code === "MG") {
-    return `${nome} solicitou orçamento em ${local.city}`;
+  if (tipo === "vidro") {
+    mensagem = "Olá, gostaria de um orçamento de vidros temperados";
   }
 
-  return `${nome} solicitou orçamento em Minas Gerais`;
+  // Evento de conversão
+  if (typeof fbq === "function") {
+    fbq("track", "Lead");
+  }
+
+  const telefone = "5531996733778";
+  const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
+
+  window.open(url, "_blank");
 }
 
-function exibirNotificacao() {
-  if (!notificacao || !textoNotificacao) return;
+const nomes = [
+  "Carlos Souza",
+  "Marcos Guilherme",
+  "João Paulo",
+  "Ana Maria",
+  "Fernanda Moraes",
+  "Ricardo Augusto",
+  "Paulo Roberto",
+  "Rafael Silva",
+  "Marisa Kollut",
+  "Julia Bittencourt",
+  "José Henrique",
+  "Geraldo Ribeiro",
+  "Maria Clara",
+];
+const cidades = [
+  "Belo Horizonte - MG",
+  "Contagem - MG",
+  "Betim - MG",
+  "Venda Nova - BH",
+  "Santa Luzia - MG",
+  "Sabará - MG",
+  "Caeté - MG",
+  "Nova Lima - MG",
+  "Aplhaville, Nova Lima - MG",
+  "Uberlandia - MG",
+  "Montes Claros - MG",
+  "Sete Lagoas - MG",
+  "Governador Valadares - MG",
+];
 
-  textoNotificacao.textContent = gerarMensagem(localUsuario);
-  notificacao.classList.add("ativa");
+const proofBox = document.getElementById("social-proof");
+
+function mostrarNotificacao() {
+  const nome = nomes[Math.floor(Math.random() * nomes.length)];
+  const cidade = cidades[Math.floor(Math.random() * cidades.length)];
+  const minutos = Math.floor(Math.random() * 10) + 1;
+
+  proofBox.innerHTML = `
+    🔔 <strong>${nome} </strong> solicitou orçamento<br>
+    📍 ${cidade}<br>
+    ⏱️ há ${minutos} minutos
+  `;
+
+  proofBox.style.display = "block";
 
   setTimeout(() => {
-    notificacao.classList.remove("ativa");
-  }, 5000);
+    proofBox.style.display = "none";
+  }, 6000);
 }
 
-setTimeout(exibirNotificacao, 3000);
-setInterval(exibirNotificacao, 14000);
+// primeira após 8 segundos
+setTimeout(mostrarNotificacao, 8000);
+
+// depois a cada 25–40s
+setInterval(
+  mostrarNotificacao,
+  Math.floor(Math.random() * (30000 - 20000)) + 20000
+);

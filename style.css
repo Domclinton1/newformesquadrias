@@ -241,6 +241,18 @@ header nav {
 }
 
 /* ================= HERO ================= */
+.atendimento-local {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border-left: 4px solid #d4a017;
+  border-right: 4px solid #ffe27a;
+  color: #f1f1f1;
+  font-size: 14px;
+  border-radius: 6px;
+  max-width: fit-content;
+}
+
 .hero {
   min-height: 90vh;
   display: flex;
@@ -1445,12 +1457,50 @@ button.btn-dourado {
     flex-direction: column;
     padding: 0;
   }
-  .redes-sociais {
-  }
+
   .footer {
     padding: 15px;
   }
   .footer-container {
     padding: 0;
+  }
+}
+#social-proof {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: linear-gradient(
+    90deg,
+    #e6e9eb 0%,
+    #c5c8cc 20%,
+    #a7aaae 40%,
+    #7d8084 60%,
+    #c5c8cc 80%,
+    #e6e9eb 100%
+  );
+  color: #222;
+  padding: 14px 16px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-size: 15px;
+  font-weight: 500;
+  max-width: fit-content;
+  display: none;
+  z-index: 9999;
+  animation: slideIn 0.5s ease;
+}
+
+#social-proof strong {
+  color: #0a7cff;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
