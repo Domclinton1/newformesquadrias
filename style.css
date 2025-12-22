@@ -147,21 +147,6 @@ header nav {
 .link-dourado.destaque {
   font-weight: 700;
 }
-/* ================= HEADER BASE ================= */
-.header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 15px 50px;
-  background: #0d0d0d;
-  border-bottom: 1px solid rgba(242, 201, 76, 0.25);
-}
 
 .logo img {
   max-width: 120px;

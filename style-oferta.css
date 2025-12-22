@@ -1,0 +1,95 @@
+/* ================= BARRA DE OFERTA ================= */
+.barra-oferta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+
+  border-bottom: 1px solid rgba(242, 201, 76, 0.35);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.barra-conteudo {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 12px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.oferta-texto {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.contador {
+  font-weight: 600;
+  font-size: 0.95rem;
+
+  background: linear-gradient(
+    135deg,
+    var(--amarelo-claro),
+    var(--amarelo-principal),
+    var(--amarelo-escuro)
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-oferta {
+  padding: 8px 18px;
+  border-radius: 25px;
+
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: linear-gradient(
+    135deg,
+    var(--amarelo-claro),
+    var(--amarelo-principal),
+    var(--amarelo-escuro)
+  );
+
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.btn-oferta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(242, 201, 76, 0.7);
+}
+
+/* Ajuste para não cobrir o conteúdo */
+body {
+  padding-top: 60px;
+}
+
+/* ================= RESPONSIVO ================= */
+@media (max-width: 768px) {
+  .barra-conteudo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  body {
+    padding-top: 95px;
+  }
+}
+.texto-dourado {
+  background: linear-gradient(135deg, #ffe27a, #f2c94c, #d4a017);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
