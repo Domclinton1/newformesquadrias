@@ -13,28 +13,29 @@ overlay.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-// formulario do whatsapp
 document
   .getElementById("form-whatsapp")
   .addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const campos = ["nome", "endereco", "mensagem"];
+    const nome = document.getElementById("nome");
+    const endereco = document.getElementById("endereco");
+    const mensagem = document.getElementById("mensagem");
+    const feedback = document.getElementById("feedback");
+
     let valido = true;
 
-    campos.forEach((id) => {
-      const el = document.getElementById(id);
-      if (!el.value.trim()) {
-        el.classList.add("error");
+    [nome, endereco, mensagem].forEach((campo) => {
+      if (!campo.value.trim()) {
+        campo.classList.add("error");
         valido = false;
       } else {
-        el.classList.remove("error");
+        campo.classList.remove("error");
       }
     });
 
     if (!valido) {
-      document.getElementById("feedback").textContent =
-        "Preencha todos os campos para continuar.";
+      feedback.textContent = "Preencha todos os campos para continuar.";
       return;
     }
 
@@ -44,7 +45,7 @@ document
 📍 *Endereço da obra:* ${endereco.value}
 📝 *Mensagem:* ${mensagem.value}`;
 
-    /* Evento de conversão */
+    /* Evento de conversão (Meta Ads) */
     if (typeof fbq === "function") {
       fbq("track", "Lead");
     }
@@ -52,11 +53,11 @@ document
     const telefone = "5531996733778";
     const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
 
-    document.getElementById("feedback").textContent =
-      "Redirecionando para o WhatsApp...";
+    feedback.textContent = "Redirecionando para o WhatsApp...";
 
     window.open(url, "_blank");
   });
+
 document.getElementById("ano").textContent = new Date().getFullYear();
 
 // script do FAQ
