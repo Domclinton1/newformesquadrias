@@ -41,9 +41,9 @@ document
 
     const texto = `Olá, gostaria de solicitar um orçamento.
 
-👤 *Nome:* ${nome.value}
-📍 *Endereço da obra:* ${endereco.value}
-📝 *Mensagem:* ${mensagem.value}`;
+ *Nome:* ${nome.value}
+ *Endereço da obra:* ${endereco.value}
+ *Mensagem:* ${mensagem.value}`;
 
     /* Evento de conversão (Meta Ads) */
     if (typeof fbq === "function") {
