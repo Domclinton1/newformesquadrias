@@ -792,15 +792,13 @@
           ></iframe>
         </div>
 
-        <!-- FORMULÁRIO -->
         <div class="contato-form">
-          <!-- REUTILIZA O MESMO FORMULÁRIO -->
-          <form id="form-whatsapp">
+          <form class="form-whatsapp">
             <div class="campo">
               <label>Nome</label>
               <input
                 type="text"
-                id="nome"
+                name="nome"
                 placeholder="Seu nome completo"
                 required
               />
@@ -810,7 +808,7 @@
               <label>Endereço da obra</label>
               <input
                 type="text"
-                id="endereco"
+                name="endereco"
                 placeholder="Rua, bairro e cidade"
                 required
               />
@@ -819,7 +817,7 @@
             <div class="campo">
               <label>Mensagem</label>
               <textarea
-                id="mensagem"
+                name="mensagem"
                 rows="4"
                 placeholder="Ex: Preciso de portas e janelas em alumínio..."
                 required
@@ -830,7 +828,7 @@
               Enviar pelo WhatsApp <i class="fab fa-whatsapp"></i>
             </button>
 
-            <span class="feedback" id="feedback"></span>
+            <span class="feedback"></span>
           </form>
         </div>
       </div>
@@ -969,6 +967,42 @@
           console.warn("Não foi possível detectar a localização");
         }
       })();
+    </script>
+    <script>
+      const forms = document.querySelectorAll(".form-whatsapp");
+
+      forms.forEach((form) => {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const nome = form.querySelector('[name="nome"]').value.trim();
+          const endereco = form.querySelector('[name="endereco"]').value.trim();
+          const mensagem = form.querySelector('[name="mensagem"]').value.trim();
+          const feedback = form.querySelector(".feedback");
+
+          if (!nome || !endereco || !mensagem) {
+            feedback.textContent = "Preencha todos os campos.";
+            feedback.style.color = "red";
+            return;
+          }
+
+          const telefone = "5531996733778"; // 👈 coloque o WhatsApp correto
+          const texto = `Olá, me chamo ${nome}.
+
+Endereço da obra: ${endereco}.
+
+Mensagem: ${mensagem}`;
+
+          const url = `https://wa.me/${telefone}?text=${encodeURIComponent(
+            texto
+          )}`;
+
+          window.open(url, "_blank");
+
+          feedback.textContent = "Redirecionando para o WhatsApp...";
+          feedback.style.color = "green";
+        });
+      });
     </script>
   </body>
 </html>

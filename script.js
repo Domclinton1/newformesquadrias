@@ -42,7 +42,9 @@ document
     const texto = `Olá, gostaria de solicitar um orçamento.
 
  *Nome:* ${nome.value}
+ 
  *Endereço da obra:* ${endereco.value}
+
  *Mensagem:* ${mensagem.value}`;
 
     /* Evento de conversão (Meta Ads) */
@@ -51,6 +53,7 @@ document
     }
 
     const telefone = "5531996733778";
+
     const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
 
     feedback.textContent = "Redirecionando para o WhatsApp...";
