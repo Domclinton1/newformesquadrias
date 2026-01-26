@@ -105,6 +105,26 @@ function enviarWhatsApp(event, tipo) {
     mensagem = "Olá, gostaria de um orçamento de vidros temperados";
   }
 
+  if (tipo === "box") {
+    mensagem = "Olá, gostária de um orçamento sobre box de banheiro";
+  }
+
+  if (tipo === "slidedoor") {
+    mensagem === "Olá, gostaria de um orçamento sobre porta slide door";
+  }
+  if (tipo === "guarda-corpo") {
+    mensagem ===
+      "Olá, gostaria de um orçamento sobre guarda corpo de vidro temperado";
+  }
+  if (tipo === "portas-e-janelas") {
+    mensagem === "Olá, gostaria de um orçamento sobre portas e janelas blindex";
+  }
+  if (tipo === "fechamento-de-area") {
+    mensagem === "Olá, gostaria de um orçamento sobre fechamento de área";
+  }
+  if (tipo === "espelho") {
+    mensagem === "Olá, gostaria de um orçamento sobre espelho sob medida";
+  }
   // Evento de conversão
   if (typeof fbq === "function") {
     fbq("track", "Lead");
@@ -173,5 +193,5 @@ setTimeout(mostrarNotificacao, 8000);
 // depois a cada 25–40s
 setInterval(
   mostrarNotificacao,
-  Math.floor(Math.random() * (30000 - 20000)) + 20000
+  Math.floor(Math.random() * (30000 - 20000)) + 20000,
 );

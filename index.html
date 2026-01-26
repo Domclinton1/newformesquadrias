@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -80,13 +80,11 @@
     <section class="hero">
       <div class="container">
         <div class="hero-content">
-          <h1 class="titulo-dourado-animado">
-            Serralheria de Esquadrias de Alumínio em BH
-          </h1>
+          <h1 class="titulo-dourado-animado">Serralheria de Alumínio em BH</h1>
 
           <p class="hero-subtitle">
-            Fabricação, instalação e manutenção de esquadrias de alumínio,
-            vidros temperados e soluções sob medida em Belo Horizonte.
+            Fabricação, instalação e manutenção de esquadrias de alumínio em
+            Belo Horizonte e Minas Gerais.
           </p>
 
           <div class="hero-buttons">
@@ -110,49 +108,45 @@
             Atendemos Belo Horizonte e região
           </div>
         </div>
-
-        <div class="contato-box">
+        <div class="contato-form">
           <h2 class="titulo-dourado-animado">Solicitar Orçamento</h2>
+          <form class="form-whatsapp">
+            <div class="campo">
+              <label>Nome</label>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
 
-          <div class="contato-form">
-            <form class="form-whatsapp">
-              <div class="campo">
-                <label>Nome</label>
-                <input
-                  type="text"
-                  name="nome"
-                  placeholder="Seu nome completo"
-                  required
-                />
-              </div>
+            <div class="campo">
+              <label>Endereço da obra</label>
+              <input
+                type="text"
+                name="endereco"
+                placeholder="Rua, bairro e cidade"
+                required
+              />
+            </div>
 
-              <div class="campo">
-                <label>Endereço da obra</label>
-                <input
-                  type="text"
-                  name="endereco"
-                  placeholder="Rua, bairro e cidade"
-                  required
-                />
-              </div>
+            <div class="campo">
+              <label>Mensagem</label>
+              <textarea
+                name="mensagem"
+                rows="4"
+                placeholder="Ex: Preciso de portas e janelas em alumínio..."
+                required
+              ></textarea>
+            </div>
 
-              <div class="campo">
-                <label>Mensagem</label>
-                <textarea
-                  name="mensagem"
-                  rows="4"
-                  placeholder="Ex: Preciso de portas e janelas em alumínio..."
-                  required
-                ></textarea>
-              </div>
+            <button type="submit" class="btn-dourado">
+              Enviar pelo WhatsApp <i class="fab fa-whatsapp"></i>
+            </button>
 
-              <button type="submit" class="btn-dourado">
-                Enviar pelo WhatsApp <i class="fab fa-whatsapp"></i>
-              </button>
-
-              <span class="feedback"></span>
-            </form>
-          </div>
+            <span class="feedback"></span>
+          </form>
         </div>
       </div>
     </section>
@@ -161,11 +155,11 @@
       <div class="container-servicos">
         <div class="servicos-header">
           <h2 class="titulo-dourado-premium titulo-dourado-animado">
-            Esquadrias de Alumínio e Vidraçaria em BH
+            Serralheria de Alumínio em Bh
           </h2>
           <p>
-            Fabricação, instalação e manutenção de esquadrias de alumínio e
-            vidros sob medida em Belo Horizonte e Minas Gerais
+            Fabricação, instalação e manutenção de esquadrias de alumínio em
+            Belo Horizonte e Minas Gerais
           </p>
         </div>
 
@@ -173,7 +167,9 @@
           <!-- ESQUADRIAS DE ALUMÍNIO -->
           <div
             class="servico-card"
-            style="background-image: url('./assets/images/esquadria-gold.png')"
+            style="
+              background-image: url(&quot;./assets/images/esquadria-gold.png&quot;);
+            "
           >
             <div class="overlay"></div>
             <div class="servico-content">
@@ -200,7 +196,9 @@
           <!-- VIDRAÇARIA -->
           <div
             class="servico-card destaque"
-            style="background-image: url('./assets/images/box-de-banheiro.png')"
+            style="
+              background-image: url(&quot;./assets/images/box-de-banheiro.png&quot;);
+            "
           >
             <div class="overlay"></div>
             <div class="servico-content">
@@ -245,119 +243,21 @@
     <section class="servicos-ofertados" id="servicos">
       <div class="container">
         <h2 class="titulo-dourado-animado">
-          Serviços de Esquadrias de Alumínio e Vidraçaria em Belo Horizonte
+          Serviços em Esquadrias de Alumínio
         </h2>
 
         <p class="servicos-descricao">
-          A NewForm é especializada em esquadrias de alumínio e serviços de
-          vidraçaria em BH, oferecendo soluções modernas, seguras e sob medida
-          para residências, comércios e obras de alto padrão.
+          A NewForm é uma serralheria de alumínio em Belo Horizonte, oferecendo
+          soluções em esquadrias de alumínio modernas, seguras e sob medida para
+          residências, comércios e obras de alto padrão.
         </p>
 
         <div class="ofertas-grid">
-          <!-- BOX DE BANHEIRO -->
-          <div
-            class="servicos-card"
-            style="background-image: url('./assets/images/box-de-banheiro.png')"
-          >
-            <div class="servico-overlay"></div>
-            <div class="servico-content">
-              <h3>Box de Banheiro em Vidro Temperado</h3>
-              <p>
-                Fabricação e instalação de box de banheiro em vidro temperado,
-                com acabamento moderno, segurança e durabilidade.
-              </p>
-            </div>
-          </div>
-
-          <!-- PORTA ESQUADRIA -->
-          <div
-            class="servicos-card"
-            style="
-              background-image: url('./assets/images/portao-de-aluminio-de-correr.webp');
-            "
-          >
-            <div class="servico-overlay"></div>
-            <div class="servico-content">
-              <h3>Portas em Esquadria de Alumínio</h3>
-              <p>
-                Portas de alumínio sob medida, ideais para residências e
-                comércios, com excelente vedação, resistência e design moderno.
-              </p>
-            </div>
-          </div>
-
-          <!-- JANELAS -->
-          <div
-            class="servicos-card"
-            style="
-              background-image: url('./assets/images/janela-aluminio-suprema.webp');
-            "
-          >
-            <div class="servico-overlay"></div>
-            <div class="servico-content">
-              <h3>Janelas de Esquadria de Alumínio</h3>
-              <p>
-                Janelas de alumínio com linhas modernas, ótima iluminação
-                natural e alto desempenho térmico e acústico.
-              </p>
-            </div>
-          </div>
-
-          <!-- SLIDE DOOR -->
-          <div
-            class="servicos-card"
-            style="
-              background-image: url('./assets/images/porta-slide-door-2.webp');
-            "
-          >
-            <div class="servico-overlay"></div>
-            <div class="servico-content">
-              <h3>Porta Slide Door em Alumínio</h3>
-              <p>
-                Portas deslizantes em alumínio ideais para varandas, áreas
-                gourmet e integração de ambientes.
-              </p>
-            </div>
-          </div>
-
-          <!-- FACHADAS -->
-          <div
-            class="servicos-card"
-            style="
-              background-image: url('./assets/images/fachada-esquadrias-vidro-1.webp');
-            "
-          >
-            <div class="servico-overlay"></div>
-            <div class="servico-content">
-              <h3>Fachadas em Esquadria de Alumínio</h3>
-              <p>
-                Fachadas modernas com esquadrias de alumínio e vidro,
-                valorizando o imóvel com sofisticação e segurança.
-              </p>
-            </div>
-          </div>
-
-          <!-- GUARDA-CORPO -->
-          <div
-            class="servicos-card"
-            style="background-image: url('./assets/images/guarda-corpo-2.webp')"
-          >
-            <div class="servico-overlay"></div>
-            <div class="servico-content">
-              <h3>Guarda-corpo em Vidro e Alumínio</h3>
-              <p>
-                Guarda-corpos em vidro e esquadrias de alumínio, ideais para
-                sacadas, escadas e áreas externas.
-              </p>
-            </div>
-          </div>
-
           <!-- OBRAS -->
           <div
             class="servicos-card"
             style="
-              background-image: url('./assets/images/obra-esquadrias-2.webp');
+              background-image: url(&quot;./assets/images/obra-esquadrias-2.webp&quot;);
             "
           >
             <div class="servico-overlay"></div>
@@ -367,47 +267,132 @@
                 Execução completa de obras em esquadrias de alumínio, atendendo
                 construtoras, arquitetos e projetos personalizados.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'obras')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
             </div>
           </div>
-
-          <!-- PORTAS E JANELAS DE VIDRO TEMPERADO -->
-
+          <!-- PORTA ESQUADRIA -->
           <div
             class="servicos-card"
             style="
-              background-image: url('./assets/images/janela-vidro-duas-folhas-2.webp');
+              background-image: url(&quot;./assets/images/portao-de-aluminio-de-correr.webp&quot;);
             "
           >
-            <div class="oferta-overlay"></div>
-
+            <div class="servico-overlay"></div>
             <div class="servico-content">
-              <h3>Portas e Janelas de Vidro Temperado</h3>
-
+              <h3>Portas em Esquadria de Alumínio</h3>
               <p>
-                Fabricamos e instalamos portas e janelas de vidro temperado com
-                acabamento moderno, alta resistência e segurança para
-                residências e empresas em Belo Horizonte.
+                Portas de alumínio sob medida, ideais para residências e
+                comércios, com excelente vedação, resistência e design moderno.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'porta-aluminio')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
             </div>
           </div>
 
-          <!-- FECHAMENTO DE ÁREA EM VIDRO TEMPERADO -->
+          <!-- JANELAS -->
           <div
-            class="servicos-card destaque"
+            class="servicos-card"
             style="
-              background-image: url('./assets/images/porta-aluminio-suprema.webp');
+              background-image: url(&quot;./assets/images/janela-aluminio-suprema.webp&quot;);
             "
           >
-            <div class="oferta-overlay"></div>
-
+            <div class="servico-overlay"></div>
             <div class="servico-content">
-              <h3>Fechamento de Área em Vidro Temperado</h3>
-
+              <h3>Janelas de Esquadria de Alumínio</h3>
               <p>
-                Soluções completas em fechamento de áreas com vidro temperado,
-                ideais para varandas, áreas gourmet e espaços externos,
-                proporcionando conforto e valorização do imóvel.
+                Janelas de alumínio com linhas modernas, ótima iluminação
+                natural e alto desempenho térmico e acústico.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'janela-aluminio')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- SLIDE DOOR -->
+          <div
+            class="servicos-card"
+            style="
+              background-image: url(&quot;./assets/images/porta-slide-door-2.webp&quot;);
+            "
+          >
+            <div class="servico-overlay"></div>
+            <div class="servico-content">
+              <h3>Porta Slide Door em Alumínio</h3>
+              <p>
+                Portas deslizantes em alumínio ideais para varandas, áreas
+                gourmet e integração de ambientes.
+              </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'slidedoor-aluminio')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- FACHADAS -->
+          <div
+            class="servicos-card"
+            style="
+              background-image: url(&quot;./assets/images/fachada-esquadrias-vidro-1.webp&quot;);
+            "
+          >
+            <div class="servico-overlay"></div>
+            <div class="servico-content">
+              <h3>Fachadas em Esquadria de Alumínio</h3>
+              <p>
+                Fachadas modernas com esquadrias de alumínio e vidro,
+                valorizando o imóvel com sofisticação e segurança.
+              </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'fachada-aluminio')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- GUARDA-CORPO -->
+          <div
+            class="servicos-card"
+            style="
+              background-image: url(&quot;./assets/images/guarda-corpo-2.webp&quot;);
+            "
+          >
+            <div class="servico-overlay"></div>
+            <div class="servico-content">
+              <h3>Guarda-corpo em Vidro e Alumínio</h3>
+              <p>
+                Guarda-corpos em vidro e esquadrias de alumínio, ideais para
+                sacadas, escadas e áreas externas.
+              </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'guarda-corpo')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento <i class="fab fa-whatsapp"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -562,13 +547,13 @@
 
           <h2 class="oferta-titulo">
             10% de desconto à vista em
-            <strong>Esquadrias de Alumínio e Vidros</strong>
+            <strong>Esquadrias de Alumínio</strong>
           </h2>
 
           <p class="oferta-descricao">
             Aproveite condições especiais para transformar seu projeto com
-            esquadrias de alumínio de alto padrão e soluções em vidro temperado.
-            Qualidade, segurança e acabamento premium com desconto exclusivo
+            esquadrias de alumínio de alto padrão. Concretizamos sua obra com
+            qualidade, segurança e acabamento premium com desconto exclusivo
             para pagamento à vista.
           </p>
 
@@ -590,12 +575,12 @@
     <section class="avaliacoes" id="avaliacoes">
       <div class="avaliacoes-container">
         <h2 class="titulo-dourado-animado">
-          Avaliações de Clientes em Belo Horizonte
+          Avaliações de Clientes de esquadrias
         </h2>
 
         <p class="avaliacoes-subtitle">
           Veja o que nossos clientes dizem sobre nossos serviços de esquadrias
-          de alumínio e vidraçaria em BH.
+          de alumínio em Belo Horizonte e Minas Gerais.
         </p>
 
         <div class="avaliacoes-grid">
@@ -667,8 +652,7 @@
     <section class="diferenciais">
       <div class="container">
         <h2 class="titulo-dourado-animado">
-          Esquadrias de Alumínio e Vidraçaria em Belo Horizonte com Qualidade
-          Garantida
+          Serralheria de alumínio mais próxima de você
         </h2>
 
         <p class="diferenciais-texto">
@@ -700,7 +684,7 @@
           </div>
 
           <div class="diferencial-card">
-            <h3>✔ Atendimento em BH e Região</h3>
+            <h3>✔ Atendimento em BH e Minas Gerais</h3>
             <p>
               Equipe especializada com instalação profissional e acompanhamento.
             </p>
@@ -711,9 +695,7 @@
 
     <section class="faq">
       <div class="container faq-container">
-        <h2 class="titulo-gradiente">
-          Perguntas Frequentes sobre Esquadrias e Vidraçaria em BH
-        </h2>
+        <h2 class="titulo-gradiente">Perguntas Frequentes</h2>
 
         <div class="faq-item">
           <button class="faq-pergunta">
@@ -722,22 +704,23 @@
           </button>
           <div class="faq-resposta">
             <p>
-              Sim. A NewForm Esquadrias atende Belo Horizonte e região
-              metropolitana, oferecendo serviços completos em esquadrias de
-              alumínio e vidraçaria.
+              Sim. A NewForm Esquadrias atende Belo Horizonte e Minas Gerais,
+              oferecendo serviços completos em esquadrias de alumínio e
+              vidraçaria.
             </p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-pergunta">
-            Trabalham com esquadrias sob medida?
+            Trabalham com esquadrias de alumínio sob medida?
             <span class="icon">+</span>
           </button>
           <div class="faq-resposta">
             <p>
               Sim. Todas as esquadrias de alumínio são fabricadas sob medida,
-              garantindo encaixe perfeito, estética e durabilidade.
+              garantindo encaixe perfeito, estética e durabilidade. Trabalhamos
+              com linha Gold e linha Suprema.
             </p>
           </div>
         </div>
@@ -750,7 +733,7 @@
           <div class="faq-resposta">
             <p>
               O prazo pode variar conforme o projeto, mas normalmente gira entre
-              15 a 30 dias após aprovação do orçamento.
+              10 a 20 dias após aprovação do orçamento.
             </p>
           </div>
         </div>
@@ -767,17 +750,28 @@
             </p>
           </div>
         </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            Vocês vendem vidro canelado ou vidro liso?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>
+              Não. Trabalhamos com instalação de vidros blindex e esquadrias de
+              alumínio.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contato-final" class="contato-final">
-      <h2 class="titulo-dourado-animado centro">
-        Esquadrias de Alumínio e Vidraçaria em Belo Horizonte
-      </h2>
+      <h2 class="titulo-dourado-animado centro">Faça contato</h2>
 
       <p class="contato-subtitulo">
         Entre em contato com a NewForm e solicite seu orçamento sem compromisso.
-        Atendemos Belo Horizonte e região metropolitana.
+        Atendemos Belo Horizonte e Minas Gerais.
       </p>
 
       <div class="contato-grid">
@@ -795,6 +789,7 @@
         </div>
 
         <div class="contato-form">
+          <h2>Faça seu orçamento</h2>
           <form class="form-whatsapp">
             <div class="campo">
               <label>Nome</label>
@@ -961,9 +956,8 @@
           const estado = data.region_code || "MG";
 
           if (cidade) {
-            document.getElementById(
-              "localizacao-atendimento"
-            ).innerHTML = `📍 Empresa em <strong>Belo Horizonte – MG</strong>, atendemos <strong>${cidade} – ${estado}</strong> e região.`;
+            document.getElementById("localizacao-atendimento").innerHTML =
+              `📍 Empresa em <strong>Belo Horizonte – MG</strong>, atendemos <strong>${cidade} – ${estado}</strong> e região.`;
           }
         } catch (error) {
           console.warn("Não foi possível detectar a localização");
@@ -996,13 +990,31 @@ Endereço da obra: ${endereco}.
 Mensagem: ${mensagem}`;
 
           const url = `https://wa.me/${telefone}?text=${encodeURIComponent(
-            texto
+            texto,
           )}`;
 
           window.open(url, "_blank");
 
           feedback.textContent = "Redirecionando para o WhatsApp...";
           feedback.style.color = "green";
+        });
+      });
+    </script>
+    <script>
+      const perguntas = document.querySelectorAll(".faq-pergunta");
+
+      perguntas.forEach((pergunta) => {
+        pergunta.addEventListener("click", () => {
+          const itemClicado = pergunta.parentElement;
+
+          perguntas.forEach((p) => {
+            const item = p.parentElement;
+            if (item !== itemClicado) {
+              item.classList.remove("active");
+            }
+          });
+
+          itemClicado.classList.toggle("active");
         });
       });
     </script>

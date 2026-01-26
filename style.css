@@ -259,11 +259,8 @@ header nav {
   align-items: center;
   padding: 0 50px;
 
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.95)
-    ),
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95)),
     url("./assets/images/banner.png") center/cover no-repeat;
 }
 
@@ -304,7 +301,9 @@ header nav {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
-  text-shadow: 1px 1px 0 #b38a00, 2px 2px 6px rgba(0, 0, 0, 0.4);
+  text-shadow:
+    1px 1px 0 #b38a00,
+    2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .titulo-dourado-animado {
@@ -324,6 +323,7 @@ header nav {
 .hero-buttons {
   display: flex;
   gap: 20px;
+  line-height: 1;
 }
 
 .btn-dourado {
@@ -332,7 +332,7 @@ header nav {
   text-decoration: none;
   font-weight: 600;
   color: #000;
-
+  text-transform: uppercase;
   background: linear-gradient(
     135deg,
     var(--amarelo-claro),
@@ -531,7 +531,9 @@ button.btn-dourado {
   background-repeat: no-repeat;
 
   border: 1px solid rgba(242, 201, 76, 0.35);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 .servico-card::before {
   content: "";
@@ -634,7 +636,9 @@ button.btn-dourado {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .btn-servico:hover {
@@ -771,7 +775,9 @@ button.btn-dourado {
   height: 280px;
   object-fit: cover;
   border-radius: 18px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
 }
 
@@ -783,11 +789,8 @@ button.btn-dourado {
 /* ================= OFERTA ================= */
 .oferta {
   padding: 100px 50px;
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.85),
-      rgba(0, 0, 0, 0.95)
-    ),
+  background:
+    linear-gradient(to right, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)),
     url("./assets/images/oferta-bg.jpg") center/cover no-repeat;
 }
 
@@ -1041,6 +1044,7 @@ button.btn-dourado {
   box-shadow: 0 10px 30px rgba(242, 201, 76, 0.15);
 }
 /* ================= FAQ ================= */
+/* ================= FAQ ================= */
 .faq {
   padding: 80px 20px;
   background: #0b0b0b;
@@ -1115,11 +1119,8 @@ button.btn-dourado {
 .contato-final {
   padding: 100px 50px;
   background: linear-gradient(to bottom, #0d0d0d, #111);
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.95)
-    ),
+  background:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.95)),
     url("./assets/images/banner.png") center/cover no-repeat;
 }
 
@@ -1350,7 +1351,9 @@ button.btn-dourado {
     var(--amarelo-principal),
     var(--amarelo-escuro)
   );
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .btn-footer-whats:hover {
@@ -1459,7 +1462,8 @@ button.btn-dourado {
   }
   .contato-grid {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
+
     padding: 0;
   }
 

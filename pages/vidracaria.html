@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -174,7 +174,7 @@
           <div
             class="servico-card"
             style="
-              background-image: url('../assets/images/box-de-banheiro.png');
+              background-image: url(&quot;../assets/images/box-de-banheiro.png&quot;);
             "
           >
             <div class="overlay"></div>
@@ -201,7 +201,9 @@
           <!-- ESQUADRIAS DE ALUMÍNIO -->
           <div
             class="servico-card destaque"
-            style="background-image: url('../assets/images/esquadria-gold.png')"
+            style="
+              background-image: url(&quot;../assets/images/esquadria-gold.png&quot;);
+            "
           >
             <div class="overlay"></div>
             <div class="servico-content">
@@ -258,7 +260,7 @@
           <div
             class="servicos-card"
             style="
-              background-image: url('../assets/images/box-de-banheiro.png');
+              background-image: url(&quot;../assets/images/box-de-banheiro.png&quot;);
             "
           >
             <div class="servico-overlay"></div>
@@ -268,6 +270,13 @@
                 Fabricação e instalação de box de banheiro em vidro temperado,
                 com acabamento moderno, segurança e durabilidade.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'box')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento
+              </a>
             </div>
           </div>
 
@@ -275,7 +284,7 @@
           <div
             class="servicos-card"
             style="
-              background-image: url('../assets/images/porta-slide-door-2.webp');
+              background-image: url(&quot;../assets/images/porta-slide-door-2.webp&quot;);
             "
           >
             <div class="servico-overlay"></div>
@@ -285,13 +294,22 @@
                 Portas deslizantes em alumínio ideais para varandas, áreas
                 gourmet e integração de ambientes.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'slidedoor')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento
+              </a>
             </div>
           </div>
 
           <!-- GUARDA-CORPO -->
           <div
             class="servicos-card"
-            style="background-image: url('./assets/images/guarda-corpo-2.webp')"
+            style="
+              background-image: url(&quot;../assets/images/guarda-corpo-2.webp&quot;);
+            "
           >
             <div class="servico-overlay"></div>
             <div class="servico-content">
@@ -300,6 +318,13 @@
                 Guarda-corpos de vidro temperado e alumínio da melhor qualidade,
                 ideais para sacadas, escadas e áreas externas.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'guarda-corpo')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento
+              </a>
             </div>
           </div>
 
@@ -308,7 +333,7 @@
           <div
             class="servicos-card"
             style="
-              background-image: url('./assets/images/janela-vidro-duas-folhas-2.webp');
+              background-image: url(&quot;../assets/images/janela-vidro-duas-folhas-2.webp&quot;);
             "
           >
             <div class="oferta-overlay"></div>
@@ -321,6 +346,13 @@
                 acabamento moderno, alta resistência e segurança para
                 residências e empresas em Belo Horizonte.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'portas-e-janelas')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento
+              </a>
             </div>
           </div>
 
@@ -328,7 +360,7 @@
           <div
             class="servicos-card destaque"
             style="
-              background-image: url('./assets/images/porta-aluminio-suprema.webp');
+              background-image: url(&quot;../assets/images/porta-aluminio-suprema.webp&quot;);
             "
           >
             <div class="oferta-overlay"></div>
@@ -341,25 +373,39 @@
                 ideais para varandas, áreas gourmet e espaços externos,
                 proporcionando conforto e valorização do imóvel.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'fechamento-de-area')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento
+              </a>
             </div>
           </div>
           <!-- ESPELHOS -->
           <div
             class="servicos-card destaque"
             style="
-              background-image: url('./assets/images/porta-aluminio-suprema.webp');
+              background-image: url(&quot;../assets/images/porta-aluminio-suprema.webp&quot;);
             "
           >
             <div class="oferta-overlay"></div>
 
             <div class="servico-content">
-              <h3>Espelhos Personaliados</h3>
+              <h3>Espelhos Personalizados</h3>
 
               <p>
                 Soluções completas em fechamento de áreas com vidro temperado,
                 ideais para varandas, áreas gourmet e espaços externos,
                 proporcionando conforto e valorização do imóvel.
               </p>
+              <a
+                href="#"
+                onclick="enviarWhatsApp(event, 'espelho')"
+                class="btn-dourado"
+              >
+                Solicitar Orçamento
+              </a>
             </div>
           </div>
         </div>
@@ -369,139 +415,109 @@
     <section class="galeria" id="galeria-de-fotos">
       <div class="container">
         <h2 class="ttitulo-dourado-premium titulo-dourado-animado">
-          Obras da nossa Vidraçaria em BH e MG
+          Obras da nossa Vidraçaria
         </h2>
 
         <p class="galeria-sub">
-          Projetos reais com esquadrias de alumínio linha Gold, linha Suprema e
-          soluções completas em vidraçaria.
+          Projetos reais com blindex e esquadrias de alumínio, temos soluções
+          completas em vidraçaria.
         </p>
 
         <div class="galeria-carousel">
           <div class="galeria-track">
             <img
-              src="./assets/images/esquadria-gold.png"
-              alt="Esquadrias de alumínio linha gold em residência moderna em BH"
-            />
-            <img
-              src="./assets/images/porta-slide-door-gold.png"
-              alt="Vidraçaria com box de banheiro e guarda-corpo em Belo Horizonte"
-            />
-            <img
-              src="./assets/images/obra-gold.png"
+              src="../assets/images/janela-vidro-duas-folhas-1.webp"
               alt="Fachada com esquadrias de alumínio e pele de vidro"
             />
             <img
-              src="./assets/images/box-de-banheiro.png"
+              src="../assets/images/janela-vidro-duas-folhas-2.webp"
               alt="Fechamento de área com vidro temperado"
             />
             <img
-              src="./assets/images/box-de-banheiro-1.webp"
+              src="../assets/images/box-de-banheiro-1.webp"
               alt="box-de-banheiro"
             />
             <img
-              src="./assets/images/box-de-canto-1.webp"
+              src="../assets/images/box-de-canto-1.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/box-de-canto-2.webp"
+              src="../assets/images/box-de-canto-2.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/box-de-canto-3.webp"
+              src="../assets/images/box-de-canto-3.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/box-de-canto-4.webp"
+              src="../assets/images/box-de-canto-4.webp"
+              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
+            />
+
+            <img
+              src="../assets/images/obra-esquadrias-2.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/box-veneziana-2.webp"
+              src="../assets/images/obra-padre-eustaquio.webp"
+              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
+            />
+
+            <img
+              src="../assets/images/vidros-area-lazer.webp"
+              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
+            />
+
+            <img
+              src="../assets/images/vidro-fixo-1.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/obra-esquadrias-2.webp"
+              src="../assets/images/fachada-esquadrias-vidro-1.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/obra-padre-eustaquio.webp"
+              src="../assets/images/esquadrias-e-veneziana-1.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/obra-padre-eustaquio-3.webp"
+              src="../assets/images/porta-correr-esquadrias-suprema-2.webp"
+              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
+            />
+
+            <img
+              src="../assets/images/porta-correr-esquadrias-suprema.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/obra-veneziana-1.webp"
+              src="../assets/images/porta-duas-folhas-gold.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/obra-veneziana-2.webp"
+              src="../assets/images/porta-aluminio-suprema.webp"
               alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
             />
             <img
-              src="./assets/images/vidros-area-lazer.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/armario-aluminio-1.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/vidro-fixo-1.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/fachada-esquadrias-vidro-1.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/esquadrias-e-veneziana-1.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/porta-correr-esquadrias-suprema-2.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/porta-veneziana-bronze-2.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/porta-correr-esquadrias-suprema.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/porta-duas-folhas-gold.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/porta-aluminio-suprema.webp"
-              alt="esquadrias de aluminio linha gold e esquadrias linha suprema"
-            />
-            <img
-              src="./assets/images/esquadrias-escritorio-1.webp"
+              src="../assets/images/esquadrias-escritorio-1.webp"
               alt="esquadrias de aluminio no escritorio"
             />
             <img
-              src="./assets/images/janelas-blindex-1.webp"
+              src="../assets/images/janelas-blindex-1.webp"
               alt="janela blindex"
             />
             <img
-              src="./assets/images/janela-esquadria-de-aluminio.webp"
+              src="../assets/images/janela-esquadria-de-aluminio.webp"
               alt="janela de esquadria de aluminio"
             />
-            <img src="./assets/images/janela-vidro-duas-folhas-1.webp" alt="" />
-            <img src="./assets/images/janela-veneziana-2.webp" alt="" />
-            <img src="./assets/images/janela-vidro-fume-1.webp" alt="" />
-            <img src="./assets/images/obra-veneziana-2.webp" alt="" />
             <img
-              src="./assets/images/portao-de-aluminio-de-correr.webp"
-              alt="Portão de alumínio linha suprema"
+              src="../assets/images/janela-vidro-duas-folhas-1.webp"
+              alt=""
             />
-            <img src="./assets/images/portas-esquadrias-1.webp" alt="" />
-            <img src="./assets/images/porta-fachada-predio.webp" alt="" />
-            <img src="./assets/images/porta-fachada-vidro.webp" alt="" />
+            <img src="../assets/images/janela-vidro-fume-1.webp" alt="" />
+
+            <img src="../assets/images/portas-esquadrias-1.webp" alt="" />
+            <img src="../assets/images/porta-fachada-predio.webp" alt="" />
+            <img src="../assets/images/porta-fachada-vidro.webp" alt="" />
           </div>
         </div>
       </div>
@@ -514,14 +530,14 @@
 
           <h2 class="oferta-titulo">
             10% de desconto à vista em
-            <strong>Instalação de qualquer serviço em Vidros Temperados</strong>
+            <strong>Instalação de Blindex</strong>
           </h2>
 
           <p class="oferta-descricao">
             Aproveite condições especiais para transformar seu projeto com
-            esquadrias de alumínio de alto padrão e soluções em vidro temperado.
-            Qualidade, segurança e acabamento premium com desconto exclusivo
-            para pagamento à vista.
+            blindex de alto padrão e soluções em vidro temperado. Qualidade,
+            segurança e acabamento premium com desconto exclusivo para pagamento
+            à vista.
           </p>
 
           <a href="./oferta-vidro.html" class="btn-dourado oferta-btn">
@@ -538,9 +554,7 @@
 
     <section class="faq">
       <div class="container faq-container">
-        <h2 class="titulo-gradiente">
-          Perguntas Frequentes sobre nossos serviços de Vidraçaria em BH e MG
-        </h2>
+        <h2 class="titulo-gradiente">Perguntas Frequentes</h2>
 
         <div class="faq-item">
           <button class="faq-pergunta">
@@ -549,16 +563,16 @@
           </button>
           <div class="faq-resposta">
             <p>
-              Sim. A NewForm Esquadrias atende Belo Horizonte e região
-              metropolitana, oferecendo serviços completos em esquadrias de
-              alumínio e vidraçaria.
+              Sim. A NewForm Esquadrias atende Belo Horizonte e Minas Gerais,
+              oferecendo serviços completos em esquadrias de alumínio e
+              vidraçaria.
             </p>
           </div>
         </div>
 
         <div class="faq-item">
           <button class="faq-pergunta">
-            Trabalham com esquadrias sob medida?
+            Trabalham com esquadrias de alumínio sob medida?
             <span class="icon">+</span>
           </button>
           <div class="faq-resposta">
@@ -577,7 +591,7 @@
           <div class="faq-resposta">
             <p>
               O prazo pode variar conforme o projeto, mas normalmente gira entre
-              15 a 30 dias após aprovação do orçamento.
+              10 a 30 dias após aprovação do orçamento.
             </p>
           </div>
         </div>
@@ -594,17 +608,29 @@
             </p>
           </div>
         </div>
+
+        <div class="faq-item">
+          <button class="faq-pergunta">
+            Vocês vendem vidro canelado ou vidro liso?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-resposta">
+            <p>
+              Não. Trabalhamos com instalação de vidros blindex e esquadrias de
+              alumínio.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contato-final" class="contato-final">
-      <h2 class="titulo-dourado-animado centro">
-        Esquadrias de Alumínio e Vidraçaria em Belo Horizonte
-      </h2>
+      <h2 class="titulo-dourado-animado centro">Faça contato</h2>
 
       <p class="contato-subtitulo">
-        Entre em contato com a NewForm e solicite seu orçamento sem compromisso.
-        Atendemos Belo Horizonte e região metropolitana.
+        Entre em contato com a NewForm Esquadrias de Alumínio e Vidro e solicite
+        seu orçamento sem compromisso. Atendemos Belo Horizonte e Minas Gerais
+        inteira.
       </p>
 
       <div class="contato-grid">
@@ -623,6 +649,7 @@
 
         <!-- FORMULÁRIO -->
         <div class="contato-form">
+          <h2>Peça seu orçamento</h2>
           <!-- REUTILIZA O MESMO FORMULÁRIO -->
           <form id="form-whatsapp">
             <div class="campo">
@@ -714,9 +741,9 @@
             class="footer-logo"
           />
           <p>
-            A NewForm Esquadrias atua em Belo Horizonte e região, oferecendo
-            soluções completas em esquadrias de alumínio e vidraçaria com alto
-            padrão de acabamento.
+            A NewForm Esquadrias atua em Belo Horizonte e Minas Gerais,
+            oferecendo soluções completas em esquadrias de alumínio e vidraçaria
+            com alto padrão de acabamento.
           </p>
         </div>
 
@@ -780,6 +807,25 @@
 
     <script src="../script.js"></script>
     <script>
+      const perguntas = document.querySelectorAll(".faq-pergunta");
+
+      perguntas.forEach((pergunta) => {
+        pergunta.addEventListener("click", () => {
+          const itemClicado = pergunta.parentElement;
+
+          perguntas.forEach((p) => {
+            const item = p.parentElement;
+            if (item !== itemClicado) {
+              item.classList.remove("active");
+            }
+          });
+
+          itemClicado.classList.toggle("active");
+        });
+      });
+    </script>
+
+    <script>
       (async function detectarCidade() {
         try {
           const response = await fetch("https://ipapi.co/json/");
@@ -789,9 +835,8 @@
           const estado = data.region_code || "MG";
 
           if (cidade) {
-            document.getElementById(
-              "localizacao-atendimento"
-            ).innerHTML = `📍 Empresa em <strong>Belo Horizonte – MG</strong>, atendemos <strong>${cidade} – ${estado}</strong> e região.`;
+            document.getElementById("localizacao-atendimento").innerHTML =
+              `📍 Empresa em <strong>Belo Horizonte – MG</strong>, atendemos <strong>${cidade} – ${estado}</strong> e região.`;
           }
         } catch (error) {
           console.warn("Não foi possível detectar a localização");
