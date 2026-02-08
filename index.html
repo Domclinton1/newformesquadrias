@@ -47,6 +47,22 @@
 
       gtag("config", "G-6L3QVNY12T");
     </script>
+    <!-- Event snippet for CHAMOU NO WHATSAPP conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") {
+            window.location = url;
+          }
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-662122639/Jve-CIfLl_UbEI_h3LsC",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
   </head>
   <body>
     <!-- HEADER -->
@@ -88,11 +104,7 @@
           </p>
 
           <div class="hero-buttons">
-            <a
-              href="#"
-              onclick="enviarWhatsApp(event, 'esquadria')"
-              class="btn-dourado"
-            >
+            <a href="#" onclick="gtag_report_conversion()" class="btn-dourado">
               Fale no WhatsApp <i class="fab fa-whatsapp"></i
             ></a>
 
@@ -185,7 +197,7 @@
               </ul>
               <a
                 href="#"
-                onclick="enviarWhatsApp(event, 'esquadria')"
+                onclick="gtag_report_conversion()"
                 class="btn-dourado"
               >
                 Solicitar Orçamento <i class="fab fa-whatsapp"></i>
@@ -230,11 +242,7 @@
           respeitando as necessidades da obra, o estilo arquitetônico e o melhor
           custo-benefício.
         </p>
-        <a
-          href="#"
-          onclick="enviarWhatsApp(event, 'esquadria')"
-          class="btn-dourado"
-        >
+        <a href="#" onclick="gtag_report_conversion()" class="btn-dourado">
           Solicitar Orçamento <i class="fab fa-whatsapp"></i>
         </a>
       </div>
